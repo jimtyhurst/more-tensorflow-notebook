@@ -12,7 +12,7 @@ FROM jupyter/tensorflow-notebook:3b1f4f5e6cc1
 LABEL maintainer="Jim Tyhurst <jim@tyhurst.com>"
 
 RUN pip install \
-    'ggplot==0.11.5' \
+    'plotnine==0.6.0' \
     'keras==2.3.1' \
     && \
     fix-permissions $CONDA_DIR && \
