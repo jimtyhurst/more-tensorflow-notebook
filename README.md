@@ -23,7 +23,7 @@ docker run -it --rm \
 
 * Runs interactively (`-it`), logging to the shell window.
 * The `--rm` option causes the container to be deleted when the container is stopped.
-* The container is named, `tensorflow`.
+* The container is named, `more-tensorflow`.
 * The Jupyter server will be available at `localhost:8888` on your computer.
 * Mapping `$PWD` to the container's `work` directory, enables files and directories in the current working directory (where you execute the `docker run` command) to appear in the `work` folder in the Jupyter server.
 * When the container starts up, it will display a URL where you can connect to the Jupyter server. The URL will contain a security token, such as:  
