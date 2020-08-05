@@ -7,13 +7,13 @@
 #
 # I added a few more libraries in this Dockerfile that I need
 # for some deep learning applications.
-FROM jupyter/tensorflow-notebook:3b1f4f5e6cc1
+FROM jupyter/tensorflow-notebook:1a66dd36ff82
 
 LABEL maintainer="Jim Tyhurst <jim@tyhurst.com>"
 
 RUN pip install \
     'plotnine==0.6.0' \
-    'keras==2.3.1' \
+    'simpletransformers==0.46.6' \
     && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
