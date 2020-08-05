@@ -12,7 +12,7 @@ FROM jupyter/tensorflow-notebook:1a66dd36ff82
 LABEL maintainer="Jim Tyhurst <jim@tyhurst.com>"
 
 RUN pip install \
-    'plotnine==0.6.0' \
+    'plotnine==0.7.1' \
     'simpletransformers==0.46.6' \
     && \
     fix-permissions $CONDA_DIR && \
